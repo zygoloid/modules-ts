@@ -1,4 +1,6 @@
 %!TEX root = std.tex
+\begin{extract*}
+\setcounter{chapter}{5}
 \rSec0[basic]{Basic concepts}
 
 %gram: \rSec1[gram.basic]{Basic concepts}
@@ -58,6 +60,7 @@ Modify paragraph 6.1/1 as follows:
   \removed{attributes}\added{semantic properties} of these names.
   [...]
   \end{std.txt}
+\end{extract*}
 
 \noindent
 Append the following two bullets to paragraph 6.1/2:
@@ -98,7 +101,7 @@ Append the following two bullets to paragraph 6.1/2:
 \exitexample
 \end{std.txt}
 
-
+\begin{extract*}
 \rSec1[basic.def.odr]{One-definition rule}
 
 Replace paragraph 6.2/1 with:
@@ -420,6 +423,7 @@ Modify paragraph 6.4.2/4 as follows:
 
 Change the definition of \term{translation-unit} in paragraph 6.5/1
 to:
+\end{extract*}
 
 \begin{before}
 \begin{bnf}\color{addclr}
@@ -453,6 +457,19 @@ to:
     preamble\opt module-import-declaration}
 \end{bnf}
 \end{after}
+
+\begin{extract}
+\begin{bnf}
+\nonterminal{translation-unit}:\br
+    \added{preamble\opt} declaration-seq\opt
+\end{bnf}
+
+\begin{bnf}
+\added{\nonterminal{preamble}:\br
+    module-declaration\br
+    preamble\opt module-import-declaration}
+\end{bnf}
+\end{extract}
 
 \noindent
 Insert a new bullet between first and second bullet of paragraph 6.5/2:
